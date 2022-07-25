@@ -18,5 +18,5 @@ def run_python_code(code: str):
 
 PageTools().set_title('Python Runner')
 PageTools().load_markdown_file('./markdown/python_runner.md')
-code = InputTools().input_text('Input your Python code:')
+code = InputTools().input_text('Input your Python code:', None)
 InputTools().button('Run', run_python_code(code))
