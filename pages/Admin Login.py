@@ -15,7 +15,7 @@ def login(login_username: str, login_password: str):
             umt_object.add_user(login_username, login_password)
             umt_object.save_users()
             st.success('Login Success')
-            st.sidebar.markdown('[Shell](./admin/Shell)')
+            st.sidebar.markdown(r'[Shell](./admin/Shell)')
         else:
             st.error('Login Failed')
 
