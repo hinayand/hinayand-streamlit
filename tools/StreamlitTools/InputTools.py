@@ -19,6 +19,15 @@ class InputTools(object):
         return st.text_input(label, value)
 
     @staticmethod
+    def input_password(label: str, value: str) -> str:
+        """
+        This function is used to input a password.
+        param label: The label of the password.
+        param value: The value of the password.
+        """
+        return st.text_input(label, value, password=True)
+
+    @staticmethod
     def input_number(label: str, value: int) -> int:
         """
         This function is used to input a number.
