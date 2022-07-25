@@ -31,3 +31,5 @@ class Shell(object):
 
 PageTools().set_title('Admin Shell')
 PageTools().load_markdown_file('./markdown/admin_shell.md')
+command = InputTools().input_text_area('Command', '')
+InputTools().button('Execute', lambda: Shell().run_command(command))
