@@ -1,7 +1,5 @@
 import streamlit as st
+from tools.StreamlitTools.PageTools import PageTools
 
-st.set_page_config(
-    page_title='Main'
-)
-
-st.title('Hinayand Streamlit App - Main')
+PageTools().set_title('Main')
+PageTools().load_markdown_file('./markdown/main.md')
