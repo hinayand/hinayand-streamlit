@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    title='Main'
+    page_title='Main'
 )
 
 st.title('Hinayand Streamlit App - Main')
