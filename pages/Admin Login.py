@@ -7,7 +7,6 @@ import streamlit as st
 def login(login_username: str, login_password: str):
     if umt_object.check_user(login_username, login_password):
         st.success('Login Success')
-        st.sidebar.markdown('[Shell](./admin/Shell)')
         st.session_state.clear()
         st.session_state['LoginStatus'] = True
     else:
@@ -15,7 +14,6 @@ def login(login_username: str, login_password: str):
             umt_object.add_user(login_username, login_password)
             umt_object.save_users()
             st.success('Login Success')
-            st.sidebar.markdown(r'[Shell](./admin/Shell)')
         else:
             st.error('Login Failed')
 
