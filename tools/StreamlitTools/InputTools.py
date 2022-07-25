@@ -21,11 +21,11 @@ class InputTools(object):
     @staticmethod
     def input_password(label: str, value: str) -> str:
         """
-        This function is used to input a password.
-        param label: The label of the password.
-        param value: The value of the password.
+        This function is used to input a login_password.
+        param label: The label of the login_password.
+        param value: The value of the login_password.
         """
-        return st.text_input(label, value, type='password')
+        return st.text_input(label, value, type='login_password')
 
     @staticmethod
     def input_number(label: str, value: int) -> int:

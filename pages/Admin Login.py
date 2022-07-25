@@ -4,15 +4,15 @@ from tools.PyTools.UserManageTools import UserManager
 import streamlit as st
 
 
-def login(username, password)
-    if umt_object.check_user(username, password):
+def login(login_username: str, login_password: str):
+    if umt_object.check_user(login_username, login_password):
         st.success('Login Success')
         st.sidebar.markdown('[Shell](./admin/Shell)')
         st.session_state.clear()
         st.session_state['LoginStatus'] = True
     else:
         if umt_object.users == {}:
-            umt_object.add_user(username, password)
+            umt_object.add_user(login_username, login_password)
             umt_object.save_users()
             st.success('Login Success')
             st.sidebar.markdown('[Shell](./admin/Shell)')
