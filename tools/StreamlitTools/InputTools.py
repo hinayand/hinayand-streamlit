@@ -25,7 +25,7 @@ class InputTools(object):
         param label: The label of the login_password.
         param value: The value of the login_password.
         """
-        return st.text_input(label, value, type='login_password')
+        return st.text_input(label, value, type='password')
 
     @staticmethod
     def input_number(label: str, value: int) -> int:
