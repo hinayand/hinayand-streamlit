@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-class TextTools(object):
+class MediaTools(object):
     """
     This class is used to show text.
     """
