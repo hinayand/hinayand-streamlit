@@ -58,3 +58,18 @@ class InputTools(object):
         :param options: The options 
         """
         return st.multiselect(label, options, value)
+    
+    def input_text_area(self, label: str, value: str) -> str:
+        """
+        This function is used to input a text area.
+        :param label: The label of the text area.
+        :param value: The value of the text area.
+        """
+        return st.text_area(label, value)
+
+    def button(self, label: str, click_callback: callable) -> None:
+        """
+        This function is used to input a button.
+        :param label: The label of the button.
+        """
+        st.button(label, on_click=click_callback)
