@@ -3,7 +3,7 @@ from tools.StreamlitTools.InputTools import InputTools
 from tools.PyTools.UserManageTools import UserManager
 import streamlit as st
 
-umt_object = UserManager(path='./user.json')
+umt_object = UserManager(path='./users.json')
 umt_object.load_users()
 
 st.session_state['LoginStatus'] = False
